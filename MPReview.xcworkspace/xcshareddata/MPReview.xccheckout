@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A118E2A-8F2B-4B0F-AB0A-6EB5675E6284</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MPReview</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D512982E175937E0490F5EC4675BFC4D72C38E06</key>
+		<string>https://github.com/cru1se/MPReview.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MPReview.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D512982E175937E0490F5EC4675BFC4D72C38E06</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cru1se/MPReview.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D512982E175937E0490F5EC4675BFC4D72C38E06</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D512982E175937E0490F5EC4675BFC4D72C38E06</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MPReview</string>
+		</dict>
+	</array>
+</dict>
+</plist>
