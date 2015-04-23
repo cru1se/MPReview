@@ -1,5 +1,5 @@
 //
-//  SidebarViewController.h
+//  BaseViewController.h
 //  MPReview
 //
 //  Created by cruise on 15/4/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BaseViewController.h"
-
-@interface SidebarViewController : BaseViewController
+@interface BaseViewController : UIViewController
 
 @end

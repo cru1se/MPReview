@@ -14,24 +14,27 @@
 
 @implementation HomeViewController
 
+-(void) defaultInterface {
+	UIView *view = [UIView new];
+	[view setBackgroundColor:RBG(10, 20, 30, 1)];
+	[self.view addSubview:view];
+	
+	UIView *superview = self.view;
+	UIEdgeInsets padding = UIEdgeInsetsMake(10, 10, 10, 10);
+	
+	[view mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.edges.equalTo(superview).with.insets(padding);
+	}];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	
+	[self defaultInterface];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
