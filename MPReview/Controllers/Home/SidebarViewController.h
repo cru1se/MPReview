@@ -1,5 +1,5 @@
 //
-//  HomeViewController.h
+//  SidebarViewController.h
 //  MPReview
 //
 //  Created by cruise on 15/4/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController
+@interface SidebarViewController : UIViewController
 
 @end

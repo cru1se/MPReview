@@ -20,38 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.2):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - EasyIOS (2.2.2):
-    - EasyIOS/Easy (= 2.2.2)
-  - EasyIOS-Extention (1.2):
-    - EasyIOS-Extention/EasyExtention (= 1.2)
-  - EasyIOS-Extention/EasyExtention (1.2):
-    - IQKeyboardManager
-    - RegExCategories
-    - RMUniversalAlert
-    - TTTAttributedLabel
-    - UICKeyChainStore
-    - XAspect
-  - EasyIOS/Easy (2.2.2):
-    - AFNetworking
-    - FLKAutoLayout (= 0.1.1)
-    - FontIcon
-    - GCDObjC
-    - MBProgressHUD
-    - MojoDatabase
-    - ReactiveCocoa (= 2.4.4)
-    - TMCache
-    - UIActivityIndicator-for-SDWebImage
-  - FLKAutoLayout (0.1.1)
   - FMDB (2.5):
     - FMDB/standard (= 2.5)
   - FMDB/common (2.5)
   - FMDB/standard (2.5):
     - FMDB/common
-  - FontIcon (1.0)
-  - GCDObjC (0.2.0)
-  - IQKeyboardManager (3.2.2)
-  - MBProgressHUD (0.9.1)
-  - MojoDatabase (1.4)
+  - Masonry (0.6.1)
+  - MJExtension (2.0.0)
+  - MJRefresh (1.4.5)
   - ReactiveCocoa (2.4.4):
     - ReactiveCocoa/UI (= 2.4.4)
   - ReactiveCocoa/Core (2.4.4):
@@ -59,70 +35,32 @@ PODS:
   - ReactiveCocoa/no-arc (2.4.4)
   - ReactiveCocoa/UI (2.4.4):
     - ReactiveCocoa/Core
-  - RegExCategories (1.0)
-  - RMUniversalAlert (0.7):
-    - RMUniversalAlert/Core (= 0.7)
-  - RMUniversalAlert/Core (0.7):
-    - UIActionSheet+Blocks (>= 0.9)
-    - UIAlertController+Blocks (>= 0.9)
-    - UIAlertView+Blocks (>= 0.9)
   - SDWebImage (3.7.2):
     - SDWebImage/Core (= 3.7.2)
   - SDWebImage/Core (3.7.2)
   - SVProgressHUD (1.1.3)
-  - TheSidebarController (0.7)
-  - TMCache (1.2.4)
-  - TTTAttributedLabel (1.13.3)
-  - UIActionSheet+Blocks (0.9)
-  - UIActivityIndicator-for-SDWebImage (1.2):
-    - SDWebImage (~> 3.7)
-  - UIAlertController+Blocks (0.9)
-  - UIAlertView+Blocks (0.9)
-  - UICKeyChainStore (2.0.4)
-  - XAspect (1.0.3):
-    - XAspect/Core (= 1.0.3)
-    - XAspect/Macros (= 1.0.3)
-  - XAspect/Core (1.0.3):
-    - XAspect/Macros
-  - XAspect/Macros (1.0.3)
   - YTKKeyValueStore (0.1.2):
     - FMDB (~> 2.0)
 
 DEPENDENCIES:
   - AFNetworking
-  - EasyIOS (~> 2.2.2)
-  - EasyIOS-Extention (~> 1.2)
+  - Masonry
+  - MJExtension
+  - MJRefresh
   - ReactiveCocoa
   - SDWebImage
   - SVProgressHUD
-  - TheSidebarController
   - YTKKeyValueStore
 
 SPEC CHECKSUMS:
   AFNetworking: fefbce9660acb17f48ae0011292d4da0f457bf36
-  EasyIOS: 5f8c2110b4d0818aa78de068dc001c5c344de7a6
-  EasyIOS-Extention: c7e402e8b2497760955510228771512c37110aa2
-  FLKAutoLayout: 95b12c5cd9652100235140b68652f063f7437851
   FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
-  FontIcon: 24a07541244227b865e689217efd7d049ba7cc43
-  GCDObjC: adcd9941029e3628de539347d3a6777470a65998
-  IQKeyboardManager: 99df8006864663a4126a77b9a2f7ea70077eff31
-  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
-  MojoDatabase: 02e3eb98510b69033ab537156969d1f76b4f369e
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  MJExtension: 6e8f19786bacf20efa4d0ffeb8054f4cdd7754c4
+  MJRefresh: 4b24394e577ea399fbc926e5b6072317aae2c152
   ReactiveCocoa: cbe3b5eae464aa72a348a7323996b171728a9e71
-  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
-  RMUniversalAlert: bce2ca406c24065b76665725c83e48006e8f65f8
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
-  TheSidebarController: ccb0143e17dcb27d1420e91a2f70fe14103a6f6a
-  TMCache: a93984b045a5ee84bd8941bd5e0b54296059cc52
-  TTTAttributedLabel: 6f3174aef8e738f44dff97c2eb7d8184f6ab6277
-  UIActionSheet+Blocks: e180b7dad0a721ab7f212ac9742af799008bb358
-  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
-  UIAlertController+Blocks: b48c673ff60726da468b32ab21bbc7683512d45b
-  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
-  UICKeyChainStore: 69eb0c3a6f669bccf16ba88de3b9069b71501361
-  XAspect: 8c6703478e01d97f5511615af3ff3546706cb3b8
   YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
 
-COCOAPODS: 0.36.0
+COCOAPODS: 0.36.4

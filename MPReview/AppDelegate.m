@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "LeftMenuViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	[self.window setBackgroundColor:[UIColor whiteColor]];
-	[self.window setRootViewController:[[LeftMenuViewController alloc] init]];
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
+	[self.window setRootViewController:nav];
 	[self.window makeKeyAndVisible];
 	return YES;
 }
