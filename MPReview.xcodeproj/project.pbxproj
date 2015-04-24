@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D5F85E2BD9C8DDC1FC32637 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AEBB77D962C8E0195EF9FC /* libPods.a */; };
+		5D6F85441AEA165F00A79654 /* UIView+MasonryHV.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6F85431AEA165F00A79654 /* UIView+MasonryHV.m */; };
 		5D8CA7CF1AE8BB12000A27CE /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8CA7CE1AE8BB12000A27CE /* BaseViewController.m */; };
 		5D9A15BB1AD4275C00ABF050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A15BA1AD4275C00ABF050 /* main.m */; };
 		5D9A15BE1AD4275C00ABF050 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A15BD1AD4275C00ABF050 /* AppDelegate.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D6F85421AEA165F00A79654 /* UIView+MasonryHV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MasonryHV.h"; sourceTree = "<group>"; };
+		5D6F85431AEA165F00A79654 /* UIView+MasonryHV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MasonryHV.m"; sourceTree = "<group>"; };
 		5D8CA7CD1AE8BB12000A27CE /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		5D8CA7CE1AE8BB12000A27CE /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		5D9A15B51AD4275C00ABF050 /* MPReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +234,8 @@
 		5DB363371AE8B79600F68249 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				5D6F85421AEA165F00A79654 /* UIView+MasonryHV.h */,
+				5D6F85431AEA165F00A79654 /* UIView+MasonryHV.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				5DB3633F1AE8B7E000F68249 /* HomeViewController.m in Sources */,
 				5DB363421AE8B80700F68249 /* SidebarViewController.m in Sources */,
 				5DD6EC341AE9F05900A875C8 /* MPLoginViewController.m in Sources */,
+				5D6F85441AEA165F00A79654 /* UIView+MasonryHV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
