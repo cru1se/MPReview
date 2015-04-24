@@ -13,6 +13,8 @@
 @interface LoginViewController ()
 
 @property (nonatomic, strong) UIImageView *bgImageView;
+@property (nonatomic, strong) UIImageView *showImageView;
+@property (nonatomic, strong) UIImageView *showTopImageView;
 @property (nonatomic, strong) UIButton *sinaLoginButton;
 @property (nonatomic, strong) UIButton *txQQLoginButton;
 @property (nonatomic, strong) UIButton *wechatLoginButton;
@@ -26,10 +28,14 @@
 
 -(void) defaultInterface {
 	[self.view addSubview:self.bgImageView];
+	[self.bgImageView addSubview:self.showImageView];
+	[self.bgImageView addSubview:self.showTopImageView];
 	[self.bgImageView addSubview:self.sinaLoginButton];
 	[self.bgImageView addSubview:self.txQQLoginButton];
 	[self.bgImageView addSubview:self.wechatLoginButton];
 	[self.bgImageView addSubview:self.mpLoginButton];
+	
+	
 	
 	[self makeConstraints];
 }
@@ -43,21 +49,33 @@
 		make.edges.equalTo(superview);
 	}];
 	
+	[self.showImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.centerX.equalTo(superview);
+		make.top.mas_equalTo(@200);
+		if (iPhone5) {
+			make.top.mas_equalTo(@100);
+		}
+	}];
+	
+	[self.showTopImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+		make.centerX.equalTo(self.showImageView);
+		make.bottom.equalTo(self.showImageView.mas_top);
+	}];
+	
 	[self.mpLoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.centerX.equalTo(superview);
-		make.bottom.equalTo(superview).with.offset(-70);
+		make.bottom.equalTo(superview).with.offset(-90);
 		make.size.mas_equalTo(CGSizeMake(264, 38));
 	}];
 	
 	CGSize buttonSize = CGSizeMake(50, 63.5);
 	
 	[self.sinaLoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
-		make.left.equalTo(self.mpLoginButton.mas_left);
-		make.bottom.equalTo(self.mpLoginButton.mas_top).with.offset(-20);
 		make.centerY.equalTo(@[self.txQQLoginButton, self.wechatLoginButton]);
+		make.bottom.equalTo(self.mpLoginButton.mas_top).with.offset(-30);
 		make.size.mas_equalTo(buttonSize);
 	}];
-	
+
 	[self.txQQLoginButton mas_makeConstraints:^(MASConstraintMaker *make) {
 		make.size.mas_equalTo(buttonSize);
 	}];
@@ -68,8 +86,8 @@
 	
 	[superview distributeSpacingHorizontallyWith:@[self.sinaLoginButton, self.txQQLoginButton, self.wechatLoginButton]];
 	
-	[superview showPlaceHolderWithAllSubviews];
-	[superview hidePlaceHolder];
+//	[superview showPlaceHolderWithAllSubviews];
+//	[superview hidePlaceHolder];
 	
 }
 
@@ -81,6 +99,20 @@
 		[_bgImageView setContentMode:UIViewContentModeScaleAspectFill];
 	}
 	return _bgImageView;
+}
+
+-(UIImageView *) showTopImageView {
+	if (!_showTopImageView) {
+		_showTopImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"login_xc_top"]];
+	}
+	return _showTopImageView;
+}
+
+-(UIImageView *) showImageView {
+	if (!_showImageView) {
+		_showImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"login_xc"]];
+	}
+	return _showImageView;
 }
 
 -(UIButton *) sinaLoginButton {
