@@ -90,6 +90,12 @@
 #define COCOAPODS_VERSION_MINOR_MJRefresh 4
 #define COCOAPODS_VERSION_PATCH_MJRefresh 5
 
+// MMPlaceHolder
+#define COCOAPODS_POD_AVAILABLE_MMPlaceHolder
+#define COCOAPODS_VERSION_MAJOR_MMPlaceHolder 1
+#define COCOAPODS_VERSION_MINOR_MMPlaceHolder 6
+#define COCOAPODS_VERSION_PATCH_MMPlaceHolder 0
+
 // MWPhotoBrowser
 #define COCOAPODS_POD_AVAILABLE_MWPhotoBrowser
 #define COCOAPODS_VERSION_MAJOR_MWPhotoBrowser 1

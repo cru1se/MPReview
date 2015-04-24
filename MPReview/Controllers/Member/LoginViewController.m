@@ -14,8 +14,18 @@
 
 @implementation LoginViewController
 
+#pragma mark - 配置视图
+
+-(void) defaultInterface {
+	
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	[self defaultInterface];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -30,6 +30,7 @@ PODS:
   - MBProgressHUD (0.9.1)
   - MJExtension (2.0.0)
   - MJRefresh (1.4.5)
+  - MMPlaceHolder (1.6)
   - MWPhotoBrowser (1.4.1):
     - DACircularProgress
     - MBProgressHUD (~> 0.8)
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
+  - MMPlaceHolder
   - MWPhotoBrowser
   - ReactiveCocoa
   - SDWebImage
@@ -71,6 +73,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: 6e8f19786bacf20efa4d0ffeb8054f4cdd7754c4
   MJRefresh: 4b24394e577ea399fbc926e5b6072317aae2c152
+  MMPlaceHolder: 3e9c27eb28c9d3a317977e3005b7ede5d6917379
   MWPhotoBrowser: 2531e682860d62b8a7ba8659de02eb9040e431e5
   PSTCollectionView: 6749df92885353521f55279a7ce2b293762e2be4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
