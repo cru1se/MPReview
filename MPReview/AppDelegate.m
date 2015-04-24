@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "HomeViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	[self.window setBackgroundColor:[UIColor whiteColor]];
-	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]];
-	[self.window setRootViewController:nav];
+	LoginViewController *loginVC = [[LoginViewController alloc] init];
+	UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+	[self.window setRootViewController:loginNav];
 	[self.window makeKeyAndVisible];
 	return YES;
 }

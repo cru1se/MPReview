@@ -14,11 +14,15 @@
 
 @implementation BaseViewController
 
+#pragma mark - ExtendedLayout
+
 #ifdef __IPHONE_7_0
 - (UIRectEdge)edgesForExtendedLayout {
 	return UIRectEdgeNone;
 }
 #endif
+
+#pragma mark - 
 
 - (void)viewDidLoad {
     [super viewDidLoad];

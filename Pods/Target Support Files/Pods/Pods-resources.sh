@@ -59,10 +59,14 @@ install_resource()
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
+  install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
+  install_resource "SIAlertView/SIAlertView/SIAlertView.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
+  install_resource "MWPhotoBrowser/MWPhotoBrowser/MWPhotoBrowser.bundle"
+  install_resource "SIAlertView/SIAlertView/SIAlertView.bundle"
   install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
 fi
 
